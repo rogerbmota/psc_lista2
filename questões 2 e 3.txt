@@ -1,0 +1,49 @@
+Atividade 2
+
+import java.util.Scanner;
+
+public class Main {
+  public static void main(String[] args) {
+
+    String nome;
+    String senha;
+
+    Scanner teclado = new Scanner(System.in);
+    do { 
+    System.out.println("Digite o nome de usuário: ");
+    nome = teclado.nextLine();
+    System.out.println("Digite a senha: ");
+    senha = teclado.nextLine();
+
+    if (nome.equals(senha)) { 
+         System.out.println ("Erro, nome igual a senha, digite novamente: ");
+           } else {
+      System.out.println("Nome de usuário e senha válidos");
+    }
+  } while (nome.equals(senha));
+ }
+}
+
+
+Atividade 3
+
+import java.util.Scanner;
+public class Main {
+  public static void main(String[] args) {
+    
+      Double n1,n2,n3,n4,n5;
+      Scanner teclado = new Scanner(System.in);
+      System.out.println("Digite a primeira nota: ");
+      n1 = teclado.nextDouble();
+      System.out.println("Digite a segunda nota: ");
+      n2 = teclado.nextDouble();
+      System.out.println("Digite a primeira nota: ");
+      n3 = teclado.nextDouble();
+      System.out.println("Digite a primeira nota: ");
+      n4 = teclado.nextDouble();
+      System.out.println("Digite a primeira nota: ");
+      n5= teclado.nextDouble();
+
+      System.out.println (n1 < n2 && n2 < n3 && n3 < n4 && n4 < n5 && n5 < n1);
+  }
+}
